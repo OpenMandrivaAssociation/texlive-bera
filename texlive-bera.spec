@@ -1,3 +1,9 @@
+# revision 20031
+# category Package
+# catalog-ctan /fonts/bera
+# catalog-date 2008-01-28 20:53:41 +0100
+# catalog-license other-free
+# catalog-version undef
 Name:		texlive-bera
 Version:	20080128
 Release:	1
@@ -144,6 +150,7 @@ repackaging, for use with TeX, of the Bitstream Vera family.
 %doc %{_texmfdistdir}/doc/fonts/bera/README
 %doc %{_texmfdistdir}/doc/fonts/bera/bera.pdf
 %doc %{_texmfdistdir}/doc/fonts/bera/bera.txt
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -154,3 +161,5 @@ repackaging, for use with TeX, of the Bitstream Vera family.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
