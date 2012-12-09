@@ -151,3 +151,18 @@ repackaging, for use with TeX, of the Bitstream Vera family.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts tex doc %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Tue Jan 03 2012 Paulo Andrade <pcpa@mandriva.com.br> 20080128-2
++ Revision: 749566
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20080128-1
++ Revision: 717907
+- texlive-bera
+- texlive-bera
+- texlive-bera
+- texlive-bera
+- texlive-bera
+
