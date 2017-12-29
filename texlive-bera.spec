@@ -5,8 +5,8 @@
 # catalog-license other-free
 # catalog-version undef
 Name:		texlive-bera
-Version:	20080128
-Release:	10
+Version:	20170414
+Release:	1
 Summary:	Bera fonts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/bera
