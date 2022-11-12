@@ -1,18 +1,12 @@
-# revision 20031
-# category Package
-# catalog-ctan /fonts/bera
-# catalog-date 2008-01-28 20:53:41 +0100
-# catalog-license other-free
-# catalog-version undef
 Name:		texlive-bera
-Version:	20190228
+Version:	20031
 Release:	1
 Summary:	Bera fonts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/bera
 License:	OTHER-FREE
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bera.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bera.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bera.r20031.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bera.doc.r20031.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -27,12 +21,12 @@ Support for use in LaTeX is also provided. The Bera family is a
 repackaging, for use with TeX, of the Bitstream Vera family.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -144,25 +138,10 @@ repackaging, for use with TeX, of the Bitstream Vera family.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Tue Jan 03 2012 Paulo Andrade <pcpa@mandriva.com.br> 20080128-2
-+ Revision: 749566
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20080128-1
-+ Revision: 717907
-- texlive-bera
-- texlive-bera
-- texlive-bera
-- texlive-bera
-- texlive-bera
-
