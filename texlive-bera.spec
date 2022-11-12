@@ -5,8 +5,8 @@ Summary:	Bera fonts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/bera
 License:	OTHER-FREE
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bera.r20031.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bera.doc.r20031.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bera.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bera.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
