@@ -3,7 +3,7 @@ Version:	20031
 Release:	2
 Summary:	Bera fonts
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/fonts/bera
+URL:		https://www.ctan.org/tex-archive/fonts/bera
 License:	OTHER-FREE
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bera.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bera.doc.r%{version}.tar.xz
