@@ -1,6 +1,6 @@
 Name:		texlive-bera
-Version:	20031
-Release:	2
+Version:	77677
+Release:	1
 Summary:	Bera fonts
 Group:		Publishing
 URL:		https://www.ctan.org/tex-archive/fonts/bera
